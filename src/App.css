@@ -1,38 +1,73 @@
-.App {
+body
+{
+  
+  height: 100vh;
+  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), rgb(176, 10, 241);
+ 
+  padding:2%;
+}
+h1
+{
   text-align: center;
+  color:whitesmoke;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  text-shadow:2px 3px  tomato;
+}
+.main
+{
+  background-color: rgba(241, 57, 226, 0.822);
+  min-height: 500px;
+  width: 400px;
+  margin:40px auto;
+  
+}
+input{
+  background-color: whitesmoke;
+  border: 0; 
+  
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input::placeholder{
+  color:rgba(0, 0, 0, 0.6);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus{
+  outline: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sub{
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  color: aliceblue;
+  border: 0;
+  background-color:rgb(73, 196, 218); 
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.sub:focus{
+  outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.del
+{
+  display: inline;
+}
+p{
+  display: inline;
+}
+.list-item
+{
+  padding:3%;
+  
+}
+.del
+{
+  margin-left: 5%;
+  cursor: pointer;
+  background-color: rgb(86, 233, 57);
 }
